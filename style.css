@@ -108,3 +108,14 @@ body {
     background: #b52a27;
   }
   
+  .task-item.completed .task-text {
+    color: #28a745;
+    position: relative;
+    padding-left: 25px;
+}
+
+.task-item.completed .task-text::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
